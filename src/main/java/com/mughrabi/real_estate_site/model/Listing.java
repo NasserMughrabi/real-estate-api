@@ -21,8 +21,8 @@ public class Listing {
 
     private Double price;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnore
+    @ManyToOne
+    // @JsonIgnore
     private User user;
 
     public Integer getId() {
@@ -69,5 +69,5 @@ public class Listing {
     public String toString() {
         return "Listing [id=" + id + ", address=" + address + ", description=" + description + ", price=" + price + "]";
     }
-    
+
 }

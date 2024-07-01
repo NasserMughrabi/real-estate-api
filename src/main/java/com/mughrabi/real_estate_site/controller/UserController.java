@@ -3,6 +3,7 @@ package com.mughrabi.real_estate_site.controller;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import com.mughrabi.real_estate_site.model.User;
 import com.mughrabi.real_estate_site.service.UserService;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000") // Allow requests from localhost:3000
 public class UserController {
 
     private UserService userService;
