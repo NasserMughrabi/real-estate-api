@@ -16,7 +16,7 @@ import com.mughrabi.real_estate_site.model.User;
 import com.mughrabi.real_estate_site.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000") // Allow requests from localhost:3000
+@CrossOrigin(origins = "http://localhost") // Allow requests from localhost (docker)
 public class UserController {
 
     private UserService userService;
@@ -36,8 +36,8 @@ public class UserController {
     }
 
     @PostMapping(path = "/users")
-    public void createUser(@RequestBody User user) {
-        userService.createUser(user);
+    public User createUser(@RequestBody User user) {
+        return userService.createUser(user);
     }
 
     @DeleteMapping(path = "/users/{id}")

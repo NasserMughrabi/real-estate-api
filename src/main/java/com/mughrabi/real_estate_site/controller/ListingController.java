@@ -12,7 +12,7 @@ import com.mughrabi.real_estate_site.model.Listing;
 import com.mughrabi.real_estate_site.service.ListingService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000") // Allow requests from localhost:3000
+@CrossOrigin(origins = "http://localhost") // Allow requests from localhost (docker)
 public class ListingController {
 
     private ListingService listingService;

@@ -35,8 +35,8 @@ public class UserService {
         return user;
     }
 
-    public void createUser(User user) {
-        userRepository.save(user);
+    public User createUser(User user) {
+        return userRepository.save(user);
     }
 
     public void deleteUser(int id) {
