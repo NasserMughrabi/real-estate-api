@@ -4,6 +4,7 @@ target/*
 !**/src/main/**/target/
 !**/src/test/**/target/
 !target/real-estate-site-0.0.1-SNAPSHOT.jar
+!target/real-estate-site-0.0.1-SNAPSHOT.jar.original
 
 ### STS ###
 .apt_generated
